@@ -1,0 +1,47 @@
+class  Bird:
+    colour='white'
+    
+    def __init__(self,name):
+        self.name=name
+    def fly(self,d):
+        self.distance=d
+        print('%s is flying '%(self.name,self.distance))
+    def shout(self):
+        print('%s shout like kou kou kou'%self.name) 
+    
+    @classmethod
+    def tellcolour(cls):
+        print('My colour is ',cls.colour)
+    @staticmethod
+    def warning():
+        print('DANGER')
+    
+b1=Bird('crow')
+print(b1.warning())
+b1.shout()
+print(b1.name)
+___________________________________________________________
+class employee1():
+    def name(self):
+        print("varun is his name")    
+    def salary(self):
+        print("30000 is his salary")
+ 
+    def age(self):
+        print("23 is his age")
+
+a=employee1()
+a.name()
+a.salary()
+a.age()
+________________________________________________________________
+class employee():
+    def __init__(self):   
+        self.name = 'varun'
+        self.age = 23
+        self.salary = 35
+        
+object1 = employee()
+print(object1.name)
+print(object1.age)
+print(object1.salary)
