@@ -5,9 +5,10 @@ class  Bird:
         self.name=name
     def fly(self,d):
         self.distance=d
-        print('%s is flying '%(self.name,self.distance))
+        print('%s can fly %s km/hr' %(self.name,self.distance))
     def shout(self):
-        print('%s shout like kou kou kou'%self.name) 
+        print('%s shout like kou kou kou'%self.name)
+    
     
     @classmethod
     def tellcolour(cls):
@@ -17,9 +18,11 @@ class  Bird:
         print('DANGER')
     
 b1=Bird('crow')
-print(b1.warning())
+b1.fly(20)
+b1.warning()
 b1.shout()
 print(b1.name)
+b1.tellcolour()
 ___________________________________________________________
 class employee1():
     def name(self):
