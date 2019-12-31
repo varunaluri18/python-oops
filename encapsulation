@@ -1,0 +1,28 @@
+class Father:
+    bike = 'Bike'
+    _cycle= 'Cycle'
+    __car = 'Car'
+    
+    def ride(self):
+        print(self.bike)
+        print(self._cycle)
+        print(self.__car)
+        
+class Son(Father):
+    pass
+
+class friend:
+    def ride(self):
+        print(Father.bike)
+        print(Father._cycle)
+        print(Father._Father__car)
+    
+        
+objfather=Father()
+objfather.ride()
+print()
+objson=Son()
+objson.ride()
+print()
+objfnd=friend()
+objfnd.ride()
