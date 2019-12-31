@@ -1,0 +1,16 @@
+class Cal:
+    
+    def add(a,b):
+        c=a+b
+        print(c)
+    def sub(a,b):
+        c=a-b
+        print(c)
+    def mul(a,b):
+        c=a*b
+        print(c)
+    
+x=Cal()
+x.add(3,2)
+x.sub(4,3)
+x.mul(4,2)
