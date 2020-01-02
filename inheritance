@@ -1,0 +1,37 @@
+class Bird:
+    def __init__(self,name):
+        self.name=name
+    def talk(self):
+        self.sayyourname(self)
+
+class Parrot(Bird):
+    def sayyourname(self):
+        print('my name is %s and i am a parrot'%self.name)
+
+class Pegion(Bird):
+    def sayyourname(self):
+        print('my name is %s and i am a pegion'%self.name)
+
+pa=Parrot('Pinky')
+pa.talk()
+pg=Pegion('Roosy')
+pg.talk()
+
+Output:
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-9-182036300a92> in <module>
+     14 
+     15 pa=Parrot('Pinky')
+---> 16 pa.talk()
+     17 pg=Pegion('Roosy')
+     18 pg.talk()
+
+<ipython-input-9-182036300a92> in talk(self)
+      3         self.name=name
+      4     def talk(self):
+----> 5         self.sayyourname(self)
+      6 
+      7 class Parrot(Bird):
+
+TypeError: sayyourname() takes 1 positional argument but 2 were given
