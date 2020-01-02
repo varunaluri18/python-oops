@@ -18,3 +18,25 @@ class Carservise:
             print("OILWASH is completed")
 obj=Carservise
 obj.Opion()
+
+OutPut:
+Choose the option
+ 1.Formwash -- 20 USD 
+ 2.Waterwash -- 10 USD 
+ 3.OilWash -- 30USD 
+3
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-8-3fd5c2e1d6a3> in <module>
+     18             print("OILWASH is completed")
+     19 obj=Carservise
+---> 20 obj.Opion(1)
+
+<ipython-input-8-3fd5c2e1d6a3> in Opion(self)
+      2     def Opion(self):
+      3         print('Choose the option')
+----> 4         self.inp = input(' 1.Formwash -- 20 USD \n 2.Waterwash -- 10 USD \n 3.OilWash -- 30USD \n')
+      5         self.inp = int(self.input)
+      6         if self.input == 1:
+
+AttributeError: 'int' object has no attribute 'inp'
