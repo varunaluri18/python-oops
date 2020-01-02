@@ -9,8 +9,24 @@ class Cal:
     def mul(a,b):
         c=a*b
         print(c)
-    
-x=Cal()
-x.add(3,2)
-x.sub(4,3)
-x.mul(4,2)
+    def div(a,b):
+        c=a%b
+        print(c)
+c=Cal()
+c.add(2,8)
+c.sub(7,5)
+c.mul(6,7)
+c.div(6,3)
+
+OutPut:
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-3-853227ddba61> in <module>
+     14         print(c)
+     15 c=Cal()
+---> 16 c.add(2,8)
+     17 c.sub(7,5)
+     18 c.mul(6,7)
+
+TypeError: add() takes 2 positional arguments but 3 were given
+
