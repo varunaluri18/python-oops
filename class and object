@@ -1,0 +1,43 @@
+class Dog:
+    species = 'mammal'
+    def xyz(self,name,height,weight,age):
+        print('Name of the dog is %s'%name)
+        print('Height of the dog is %s '%height)
+        print('Weight of the dog is %s '%weight)
+        print('Age of the dog is %s '%age)
+
+d1=Dog()
+d1.xyz('Puppy',1,20,7)
+__________________________________
+class Dog:
+    species = 'mammal'
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def description(self):
+        return "{} is {} years old".format(self.name, self.age)
+    def speak(self, sound):
+        return "{} says {}".format(self.name, sound)
+    
+    
+mikey = Dog("Mikey", 6)
+print(mikey.speak('bow...bow...bow'))
+print()
+print(mikey.description())
+print(mikey.speak("Gruff Gruff"))
+----------------------------------------------
+class Dog:
+    species = 'mammal'
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+philo = Dog("Philo", 5)
+milkey = Dog("Mikey", 6)
+
+print(milkey.name,milkey.age)
+print(philo.name,philo.age)
+print("{} is {} and {} is {}.".format(
+    philo.name, philo.age, mikey.name, mikey.age))
+if philo.species == "mammal":
+    print("{0} is a {1}!".format(philo.name, philo.species))
